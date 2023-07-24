@@ -9,8 +9,8 @@ function Dashboard() {
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon" />
                         </button>
-                        <a className="navbar-brand pt-0" href="./index.html">
-                            <img src="./assets/img/brand/blue.png" className="navbar-brand-img" alt="..." />
+                        <a className="navbar-brand pt-0" href="#">
+                            <img src="../../../assets/img/brand/blue.png" className="navbar-brand-img" alt="..." />
                         </a>
                         <ul className="nav align-items-center d-md-none">
                             <li className="nav-item dropdown">
@@ -28,8 +28,7 @@ function Dashboard() {
                                 <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div className="media align-items-center">
                                         <span className="avatar avatar-sm rounded-circle">
-                                            <img alt="Image placeholder" src="./assets/img/theme/team-1-800x800.jpg
-" />
+                                            <img alt="Image placeholder" src="./assets/img/theme/team-1-800x800.jpg" />
                                         </span>
                                     </div>
                                 </a>
@@ -218,7 +217,7 @@ function Dashboard() {
                                             <div className="card-body">
                                                 <div className="row">
                                                     <div className="col">
-                                                        <h5 className="card-title text-uppercase text-muted mb-0">Traffic</h5>
+                                                        <h5 className="card-title text-uppercase text-muted mb-0">Orders</h5>
                                                         <span className="h2 font-weight-bold mb-0">350,897</span>
                                                     </div>
                                                     <div className="col-auto">
@@ -239,7 +238,7 @@ function Dashboard() {
                                             <div className="card-body">
                                                 <div className="row">
                                                     <div className="col">
-                                                        <h5 className="card-title text-uppercase text-muted mb-0">New users</h5>
+                                                        <h5 className="card-title text-uppercase text-muted mb-0">Menu List</h5>
                                                         <span className="h2 font-weight-bold mb-0">2,356</span>
                                                     </div>
                                                     <div className="col-auto">
@@ -281,8 +280,8 @@ function Dashboard() {
                                             <div className="card-body">
                                                 <div className="row">
                                                     <div className="col">
-                                                        <h5 className="card-title text-uppercase text-muted mb-0">Performance</h5>
-                                                        <span className="h2 font-weight-bold mb-0">49,65%</span>
+                                                        <h5 className="card-title text-uppercase text-muted mb-0">Menus</h5>
+                                                        <span className="h2 font-weight-bold mb-0">49</span>
                                                     </div>
                                                     <div className="col-auto">
                                                         <div className="icon icon-shape bg-info text-white rounded-circle shadow">
@@ -303,36 +302,101 @@ function Dashboard() {
                     </div>
                     <div className="container-fluid mt--7">
                         <div className="row">
-                            <div className="col-xl-8 mb-5 mb-xl-0">
-                                <div className="card bg-gradient-default shadow">
-                                    <div className="card-header bg-transparent">
+                        <div className="col-xl-8 mb-5 mb-xl-0">
+                                <div className="card shadow">
+                                    <div className="card-header border-0">
                                         <div className="row align-items-center">
                                             <div className="col">
-                                                <h6 className="text-uppercase text-light ls-1 mb-1">Overview</h6>
-                                                <h2 className="text-white mb-0">Sales value</h2>
+                                                <h3 className="mb-0">Page visits</h3>
                                             </div>
-                                            <div className="col">
-                                                <ul className="nav nav-pills justify-content-end">
-                                                    <li className="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}" data-prefix="$" data-suffix="k">
-                                                        <a href="#" className="nav-link py-2 px-3 active" data-toggle="tab">
-                                                            <span className="d-none d-md-block">Month</span>
-                                                            <span className="d-md-none">M</span>
-                                                        </a>
-                                                    </li>
-                                                    <li className="nav-item" data-toggle="chart" data-target="#chart-sales" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}" data-prefix="$" data-suffix="k">
-                                                        <a href="#" className="nav-link py-2 px-3" data-toggle="tab">
-                                                            <span className="d-none d-md-block">Week</span>
-                                                            <span className="d-md-none">W</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                            <div className="col text-right">
+                                                <a href="#!" className="btn btn-sm btn-primary">See all</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="card-body">
-                                        <div className="chart">
-                                            <canvas id="chart-sales" className="chart-canvas" />
-                                        </div>
+                                    <div className="table-responsive">
+                                        <table className="table align-items-center table-flush">
+                                            <thead className="thead-light">
+                                                <tr>
+                                                    <th scope="col">Page name</th>
+                                                    <th scope="col">Visitors</th>
+                                                    <th scope="col">Unique users</th>
+                                                    <th scope="col">Bounce rate</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        /argon/
+                                                    </th>
+                                                    <td>
+                                                        4,569
+                                                    </td>
+                                                    <td>
+                                                        340
+                                                    </td>
+                                                    <td>
+                                                        <i className="fas fa-arrow-up text-success mr-3" /> 46,53%
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        /argon/index.html
+                                                    </th>
+                                                    <td>
+                                                        3,985
+                                                    </td>
+                                                    <td>
+                                                        319
+                                                    </td>
+                                                    <td>
+                                                        <i className="fas fa-arrow-down text-warning mr-3" /> 46,53%
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        /argon/charts.html
+                                                    </th>
+                                                    <td>
+                                                        3,513
+                                                    </td>
+                                                    <td>
+                                                        294
+                                                    </td>
+                                                    <td>
+                                                        <i className="fas fa-arrow-down text-warning mr-3" /> 36,49%
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        /argon/tables.html
+                                                    </th>
+                                                    <td>
+                                                        2,050
+                                                    </td>
+                                                    <td>
+                                                        147
+                                                    </td>
+                                                    <td>
+                                                        <i className="fas fa-arrow-up text-success mr-3" /> 50,87%
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        /argon/profile.html
+                                                    </th>
+                                                    <td>
+                                                        1,795
+                                                    </td>
+                                                    <td>
+                                                        190
+                                                    </td>
+                                                    <td>
+                                                        <i className="fas fa-arrow-down text-danger mr-3" /> 46,53%
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>

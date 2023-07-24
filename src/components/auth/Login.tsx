@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 function Login() {
@@ -7,8 +8,9 @@ function Login() {
                 {/* Navbar */}
                 <nav className="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
                     <div className="container px-4">
-                        <a className="navbar-brand" href="../index.html">
-                            <img src="../assets/img/brand/white.png" />
+                        <a className="navbar-brand" href="#">
+                            {/* <img src="../assets/img/brand/white.png" /> */}
+                            <h3 className="text-white">Logo</h3>
                         </a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon" />
@@ -56,29 +58,29 @@ function Login() {
                     </div>
                 </nav>
                 {/* Header */}
-                <div className="header bg-gradient-primary py-5 py-lg-7">
+                <div className="header bg-gradient-primary py-6 py-lg-8">
                     <div className="container">
                         <div className="header-body text-center mb-7">
                             <div className="row justify-content-center">
                                 <div className="col-lg-5 col-md-6">
                                     <h1 className="text-white">Welcome!</h1>
-                                    {/* <p className="text-lead text-light">Use these awesome forms to login or create new account in your project for free.</p> */}
+                                    <p className="text-lead text-light">Use these awesome brgfgbrbfgbr account in your project for free.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="separator separator-bottom separator-skew zindex-100">
-                        <svg x={0} y={0} viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <svg x={0} y={0} viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="#">
                             <polygon className="fill-default" points="2560 0 2560 100 0 100" />
                         </svg>
                     </div>
                 </div>
                 {/* Page content */}
-                <div className="container mt--8 pb-8">
+                <div className="container mt--9 pb-9">
                     <div className="row justify-content-center">
                         <div className="col-lg-5 col-md-7">
-                        <div className="card bg-secondary shadow border-0" style={{ boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }}>
-                                <div className="card-body px-lg-5 py-lg-5">
+                            <div className="card bg-secondary shadow border-0" style={{ boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }}>
+                                <div className="card-body px-lg- py-lg-5">
                                     <div className="text-center text-muted mb-4">
                                         {/* <small>Login Here</small> */}
                                         <h2 className="display-3"><b>Login</b></h2>
@@ -107,48 +109,51 @@ function Login() {
                                             </label>
                                         </div>
                                         <div className="text-center">
-                                            <button type="button" className="btn btn-primary my-4">Sign in</button>
+                                            <button type="button" className="btn btn-primary my-4">
+                                                <Link to="/Dashboard" className="text-white">Sign in</Link>
+                                            </button>
+
                                         </div>
                                     </form>
                                 </div>
-                               
+
                             </div>
-                            
+
 
                         </div>
 
                     </div>
-                    <div className="col-md-12 text-center mt-3">
+                    {/* <div className="col-md-12 text-center mt-4">
                                     <a href="#" className="text-center text-primary" style={{color:"#ffff"}}><small> © 2023  <a href="#"> mamaAfrica Cafetia </a></small></a>
-                                </div>
+                                </div> */}
                 </div>
-                {/* <footer className="py-5">
+                <footer className="py-3">
                     <div className="container">
                         <div className="row align-items-center justify-content-xl-between">
                             <div className="col-xl-6">
-                                <div className="copyright text-center text-xl-left text-muted">
-                                    © 2018 <a href="https://www.creative-tim.com" className="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+                                <div className="copyright text-center text-xl-left text-white">
+                                    © 2023 <a href="#" className="font-weight-bold ml-1 text-white" target="_blank">Cafetia</a>
                                 </div>
                             </div>
                             <div className="col-xl-6">
                                 <ul className="nav nav-footer justify-content-center justify-content-xl-end">
                                     <li className="nav-item">
-                                        <a href="https://www.creative-tim.com" className="nav-link" target="_blank">Creative Tim</a>
+                                        <a href="#" className="nav-link text-white" target="_blank">Home</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="https://www.creative-tim.com/presentation" className="nav-link" target="_blank">About Us</a>
+                                        <a href="#" className="nav-link text-white" target="_blank">About Us</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="http://blog.creative-tim.com" className="nav-link" target="_blank">Blog</a>
+                                        <a href="#" className="nav-link text-white" target="_blank">Blog</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" className="nav-link" target="_blank">MIT License</a>
+                                        <a href="#" className="nav-link text-white" target="_blank">Contacts</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </footer> */}
+                </footer>
             </div>
         </div>
 
