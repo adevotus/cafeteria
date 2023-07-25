@@ -17,12 +17,12 @@ function Dashboard() {
                                 <a className="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i className="ni ni-bell-55" />
                                 </a>
-                                <div className="dropdown-menu dropdown-menu-arrow dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
+                                {/* <div className="dropdown-menu dropdown-menu-arrow dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
                                     <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
+                                    <a className="dropdown-item" href="#">Another</a>
                                     <div className="dropdown-divider" />
-                                    <a className="dropdown-item" href="#">Something else here</a>
-                                </div>
+                                    <a className="dropdown-item" href="#">Something</a>
+                                </div> */}
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -33,25 +33,13 @@ function Dashboard() {
                                     </div>
                                 </a>
                                 <div className="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-                                    <div className=" dropdown-header noti-title">
-                                        <h6 className="text-overflow m-0">Welcome!</h6>
-                                    </div>
+                                    
                                     <a href="./examples/profile.html" className="dropdown-item">
                                         <i className="ni ni-single-02" />
                                         <span>My profile</span>
                                     </a>
-                                    <a href="./examples/profile.html" className="dropdown-item">
-                                        <i className="ni ni-settings-gear-65" />
-                                        <span>Settings</span>
-                                    </a>
-                                    <a href="./examples/profile.html" className="dropdown-item">
-                                        <i className="ni ni-calendar-grid-58" />
-                                        <span>Activity</span>
-                                    </a>
-                                    <a href="./examples/profile.html" className="dropdown-item">
-                                        <i className="ni ni-support-16" />
-                                        <span>Support</span>
-                                    </a>
+                                  
+                                    
                                     <div className="dropdown-divider" />
                                     <a href="#!" className="dropdown-item">
                                         <i className="ni ni-user-run" />
@@ -88,74 +76,57 @@ function Dashboard() {
                             </form>
                             <ul className="navbar-nav">
                                 <li className="nav-item  active ">
-                                    <a className="nav-link  active " href="./index.html">
+                                    <a className="nav-link  active " href="#">
                                         <i className="ni ni-tv-2 text-primary" /> Dashboard
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="./examples/icons.html">
-                                        <i className="ni ni-planet text-blue" /> Icons
+                                    <a className="nav-link " href="#">
+                                        <i className="ni ni-planet text-blue" />Orders
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="./examples/maps.html">
-                                        <i className="ni ni-pin-3 text-orange" /> Maps
+                                    <a className="nav-link " href="#">
+                                        <i className="ni ni-pin-3 text-orange" />Billings
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="./examples/profile.html">
-                                        <i className="ni ni-single-02 text-yellow" /> User profile
+                                    <a className="nav-link " href="#">
+                                        <i className="ni ni-single-02 text-yellow" />Users
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="./examples/tables.html">
-                                        <i className="ni ni-bullet-list-67 text-red" /> Tables
+                                    <a className="nav-link " href="#">
+                                        <i className="ni ni-bullet-list-67 text-red" /> Reports
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./examples/login.html">
-                                        <i className="ni ni-key-25 text-info" /> Login
+                                    <a className="nav-link" href="#">
+                                        <i className="ni ni-key-25 text-info" />Store
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="./examples/register.html">
-                                        <i className="ni ni-circle-08 text-pink" /> Register
+                                    <a className="nav-link" href="#">
+                                        <i className="ni ni-circle-08 text-pink" /> Kitchen
                                     </a>
                                 </li>
                             </ul>
-                            <hr className="my-3" />
-                            <h6 className="navbar-heading text-muted">Documentation</h6>
-                            <ul className="navbar-nav mb-md-3">
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html">
-                                        <i className="ni ni-spaceship" /> Getting started
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html">
-                                        <i className="ni ni-palette" /> Foundation
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html">
-                                        <i className="ni ni-ui-04" /> Components
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul className="navbar-nav">
+                            {/* <hr className="my-3" /> */}
+                           
+                            {/* <ul className="navbar-nav">
                                 <li className="nav-item active active-pro">
-                                    <a className="nav-link" href="./examples/upgrade.html">
+                                    <a className="nav-link" href="#">
                                         <i className="ni ni-send text-dark" /> Upgrade to PRO
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
                 </nav>
                 <div className="main-content">
                     <nav className="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
                         <div className="container-fluid">
-                            <a className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="./index.html">Dashboard</a>
+                            <a className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="#">Dashboard</a>
                             <form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
                                 <div className="form-group mb-0">
                                     <div className="input-group input-group-alternative">
@@ -179,25 +150,12 @@ function Dashboard() {
                                         </div>
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-                                        <div className=" dropdown-header noti-title">
-                                            <h6 className="text-overflow m-0">Welcome!</h6>
-                                        </div>
+                                      
                                         <a href="./examples/profile.html" className="dropdown-item">
                                             <i className="ni ni-single-02" />
                                             <span>My profile</span>
                                         </a>
-                                        <a href="./examples/profile.html" className="dropdown-item">
-                                            <i className="ni ni-settings-gear-65" />
-                                            <span>Settings</span>
-                                        </a>
-                                        <a href="./examples/profile.html" className="dropdown-item">
-                                            <i className="ni ni-calendar-grid-58" />
-                                            <span>Activity</span>
-                                        </a>
-                                        <a href="./examples/profile.html" className="dropdown-item">
-                                            <i className="ni ni-support-16" />
-                                            <span>Support</span>
-                                        </a>
+                                     
                                         <div className="dropdown-divider" />
                                         <a href="#!" className="dropdown-item">
                                             <i className="ni ni-user-run" />
@@ -227,7 +185,7 @@ function Dashboard() {
                                                     </div>
                                                 </div>
                                                 <p className="mt-3 mb-0 text-muted text-sm">
-                                                    <span className="text-success mr-2"><i className="fa fa-arrow-up" /> 3.48%</span>
+                                                    <span className="text-success mr-2"><i className="fa fa-arrow-up"/> 3.48</span>
                                                     <span className="text-nowrap">Since last month</span>
                                                 </p>
                                             </div>
@@ -248,7 +206,7 @@ function Dashboard() {
                                                     </div>
                                                 </div>
                                                 <p className="mt-3 mb-0 text-muted text-sm">
-                                                    <span className="text-danger mr-2"><i className="fas fa-arrow-down" /> 3.48%</span>
+                                                    <span className="text-danger mr-2"><i className="fas fa-arrow-down" /> 3.48</span>
                                                     <span className="text-nowrap">Since last week</span>
                                                 </p>
                                             </div>
@@ -307,7 +265,7 @@ function Dashboard() {
                                     <div className="card-header border-0">
                                         <div className="row align-items-center">
                                             <div className="col">
-                                                <h3 className="mb-0">Page visits</h3>
+                                                <h3 className="mb-0">Recent Items Register</h3>
                                             </div>
                                             <div className="col text-right">
                                                 <a href="#!" className="btn btn-sm btn-primary">See all</a>
@@ -318,10 +276,10 @@ function Dashboard() {
                                         <table className="table align-items-center table-flush">
                                             <thead className="thead-light">
                                                 <tr>
-                                                    <th scope="col">Page name</th>
-                                                    <th scope="col">Visitors</th>
-                                                    <th scope="col">Unique users</th>
-                                                    <th scope="col">Bounce rate</th>
+                                                    <th scope="col">Item Nanme</th>
+                                                    <th scope="col">Quantiyt</th>
+                                                    <th scope="col">Amounts</th>
+                                                    <th scope="col">Date</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -411,9 +369,69 @@ function Dashboard() {
                                         </div>
                                     </div>
                                     <div className="card-body">
-                                        <div className="chart">
-                                            <canvas id="chart-orders" className="chart-canvas" />
-                                        </div>
+                                    <div className="table-responsive">
+                                        <table className="table align-items-center table-flush">
+                                            <thead className="thead-light">
+                                                <tr>
+                                                    <th scope="col">Order menu</th>
+                                                    <th scope="col">Quantity</th>
+                                                    <th scope='col'>Amount</th>
+                                                    <th scope="col">Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        Friday Bilian
+                                                    </th>
+                                                    <td>
+                                                        10
+                                                    </td>
+                                                    <td>2000</td>
+                                                    <td>
+                                                       2023-04-20
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        Friday Bilian
+                                                    </th>
+                                                    <td>
+                                                        10
+                                                    </td>
+                                                    <td>2000</td>
+                                                    <td>
+                                                       2023-04-20
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        Friday Bilian
+                                                    </th>
+                                                    <td>
+                                                        10
+                                                    </td>
+                                                    <td>2000</td>
+                                                    <td>
+                                                       2023-04-20
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        Friday Bilian
+                                                    </th>
+                                                    <td>
+                                                        10
+                                                    </td>
+                                                    <td>2000</td>
+                                                    <td>
+                                                       2023-04-20
+                                                    </td>
+                                                </tr>
+                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
                                     </div>
                                 </div>
                             </div>

@@ -3,6 +3,8 @@ import Dashboard from './sections/generel/Dashboard';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Routes, Route } from 'react-router-dom';
 import Login from './components/auth/Login';
+import DashboardKitchek from './sections/kitchen/DashboardKitchek';
+import DashboardWaiter from './sections/waiter/DashboardWaiter';
 
 // import './App.css'
 
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/kitchen" element={<DashboardKitchek/>}/>
+        <Route path='/waiter' element={<DashboardWaiter/>}/>
       </Routes>
     </QueryClientProvider>
 
