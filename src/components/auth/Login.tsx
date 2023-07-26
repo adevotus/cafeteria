@@ -1,161 +1,85 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 
 function Login() {
     return (
-        <div className="bg-default">
-            <div className="main-content">
-                {/* Navbar */}
-                <nav className="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
-                    <div className="container px-4">
-                        <a className="navbar-brand" href="#">
-                            {/* <img src="../assets/img/brand/white.png" /> */}
-                            <h3 className="text-white">Logo</h3>
-                        </a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon" />
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbar-collapse-main">
-                            {/* Collapse header */}
-                            <div className="navbar-collapse-header d-md-none">
-                                <div className="row">
-                                    <div className="col-6 collapse-brand">
-                                        <a href="../index.html">
-                                            <img src="../assets/img/brand/blue.png" />
-                                        </a>
-                                    </div>
-                                    <div className="col-6 collapse-close">
-                                        <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
-                                            <span />
-                                            <span />
-                                        </button>
-                                    </div>
+        <div>
+            <div id="app">
+                <section className="section">
+                    <div className="container mt-5">
+                        <div className="row">
+                            <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+                                <div className="login-brand">
+                                    <h3>My Cafeteria</h3>
+                                    {/* <img src="assets/img/stisla-fill.svg" alt="logo" width={100} className="shadow-light rounded-circle" /> */}
                                 </div>
-                            </div>
-                            {/* Navbar items */}
-                            <ul className="navbar-nav ml-auto">
-                                <li className="nav-item">
-                                    <a className="nav-link nav-link-icon" href="#">
-                                        <i className="ni ni-planet" />
-                                        <span className="nav-link-inner--text">Home</span>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link nav-link-icon" href="#">
-                                        <i className="ni ni-circle-08" />
-                                        <span className="nav-link-inner--text">About</span>
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link nav-link-icon" href="#">
-                                        <i className="ni ni-key-25" />
-                                        <span className="nav-link-inner--text">Contacts</span>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                {/* Header */}
-                <div className="header bg-gradient-primary py-6 py-lg-8">
-                    <div className="container">
-                        <div className="header-body text-center mb-7">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-5 col-md-6">
-                                    <h1 className="text-white">Welcome!</h1>
-                                    <p className="text-lead text-light">Use these awesome brgfgbrbfgbr account in your project for free.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="separator separator-bottom separator-skew zindex-100">
-                        <svg x={0} y={0} viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="#">
-                            <polygon className="fill-default" points="2560 0 2560 100 0 100" />
-                        </svg>
-                    </div>
-                </div>
-                {/* Page content */}
-                <div className="container mt--9 pb-9">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-5 col-md-7">
-                            <div className="card bg-secondary shadow border-0" style={{ boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }}>
-                                <div className="card-body px-lg- py-lg-5">
-                                    <div className="text-center text-muted mb-4">
-                                        {/* <small>Login Here</small> */}
-                                        <h2 className="display-3"><b>Login</b></h2>
-                                    </div>
-                                    <form role="form">
-                                        <div className="form-group mb-3">
-                                            <div className="input-group input-group-alternative">
-                                                <div className="input-group-prepend">
-                                                    <span className="input-group-text"><i className="ni ni-email-83" /></span>
+                                <div className="card card-primary" style={{ boxShadow: "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px" }}>
+                                    <div className="card-header"><h4 className="text-center">Login Here</h4></div>
+                                    <div className="card-body">
+                                        <form method="POST" action="#" className="needs-validation" noValidate>
+                                            <div className="form-group">
+                                                <label htmlFor="email">Email</label>
+                                                <input id="email" type="email" className="form-control" name="email" tabIndex={1} required />
+                                                <div className="invalid-feedback">
+                                                    Please fill in your email
                                                 </div>
-                                                <input className="form-control" placeholder="Email" type="email" />
                                             </div>
-                                        </div>
-                                        <div className="form-group">
-                                            <div className="input-group input-group-alternative">
-                                                <div className="input-group-prepend">
-                                                    <span className="input-group-text"><i className="ni ni-lock-circle-open" /></span>
+                                            <div className="form-group">
+                                                <div className="d-block">
+                                                    <label htmlFor="password" className="control-label">Password</label>
+                                                    <div className="float-right">
+                                                        <a href="auth-forgot-password.html" className="text-small">
+                                                            Forgot Password?
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <input className="form-control" placeholder="Password" type="password" />
+                                                <input id="password" type="password" className="form-control" name="password" tabIndex={2} required />
+                                                <div className="invalid-feedback">
+                                                    please fill in your password
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="custom-control custom-control-alternative custom-checkbox">
-                                            <input className="custom-control-input" id=" customCheckLogin" type="checkbox" />
-                                            <label className="custom-control-label" htmlFor=" customCheckLogin">
-                                                <span className="text-muted">Remember me</span>
-                                            </label>
-                                        </div>
-                                        <div className="text-center">
-                                            <button type="button" className="btn btn-primary my-4">
-                                                <Link to="/Dashboard" className="text-white">Sign in</Link>
-                                            </button>
+                                            <div className="form-group">
+                                                <div className="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="remember" className="custom-control-input" tabIndex={3} id="remember-me" />
+                                                    <label className="custom-control-label" htmlFor="remember-me">Remember Me</label>
+                                                </div>
+                                            </div>
+                                            <div className="form-group">
+                                                <button type="submit" className="btn btn-primary btn-lg btn-block" tabIndex={4}>
+                                                    <Link to="/dashboard" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                                        Login generel <i className="fas fa-arrow-right fa-sm"></i>
+                                                    </Link>
+                                                </button>
+                                                <button type="submit" className="btn btn-primary btn-lg btn-block" tabIndex={4}>
+                                                    <Link to="/kitchen" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                                        Login kitchen<i className="fas fa-arrow-right fa-sm"></i>
+                                                    </Link>
+                                                </button>
+                                                <button type="submit" className="btn btn-primary btn-lg btn-block" tabIndex={4}>
+                                                    <Link to="/waiter" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                                        Login  waiter<i className="fas fa-arrow-right fa-sm"></i>
+                                                    </Link>
+                                                </button>
+                                            </div>
+                                        </form>
 
-                                        </div>
-                                    </form>
+
+                                    </div>
                                 </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    {/* <div className="col-md-12 text-center mt-4">
-                                    <a href="#" className="text-center text-primary" style={{color:"#ffff"}}><small> © 2023  <a href="#"> mamaAfrica Cafetia </a></small></a>
+                                {/* <div className="mt-5 text-muted text-center">
+                                    Don't have an account? <a href="auth-register.html">Create One</a>
                                 </div> */}
-                </div>
-                <footer className="py-3">
-                    <div className="container">
-                        <div className="row align-items-center justify-content-xl-between">
-                            <div className="col-xl-6">
-                                <div className="copyright text-center text-xl-left text-white">
-                                    © 2023 <a href="#" className="font-weight-bold ml-1 text-white" target="_blank">Cafetia</a>
+                                <div className="simple-footer">
+                                    Copyright © Cafeteria 2023
                                 </div>
-                            </div>
-                            <div className="col-xl-6">
-                                <ul className="nav nav-footer justify-content-center justify-content-xl-end">
-                                    <li className="nav-item">
-                                        <a href="#" className="nav-link text-white" target="_blank">Home</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a href="#" className="nav-link text-white" target="_blank">About Us</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a href="#" className="nav-link text-white" target="_blank">Blog</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a href="#" className="nav-link text-white" target="_blank">Contacts</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
-                </footer>
+                </section>
             </div>
         </div>
+
+
 
     )
 }

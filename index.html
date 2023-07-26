@@ -9,34 +9,60 @@
     Cafeteria
   </title>
 
-  <!-- Favicon -->
-  <link rel="stylesheet" href="./src/assets/">
-  <link href="./src/assets/img/brand/favicon.png" rel="icon" type="image/png">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <!-- Icons -->
-  <link href="./src/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
-  <link href="./src/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link href="./src/assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="./src/assets/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/assets/modules/fontawesome/css/all.min.css">
+  
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="./src/assets/modules/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="./src/assets/modules/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="./src/assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+  
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/components.css">
+  <!-- Start GA -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-94034622-3');
+  </script>
 </head>
 
 <body class="">
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
-  <script src="./src/assets/js/plugins/jquery/dist/jquery.min.js"></script>
-  <script src="./src/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./src/assets/js/plugins/chart.js/dist/Chart.min.js"></script>
-  <script src="./src/assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
-  <script src="./src/assets/js/argon-dashboard.min.js?v=1.1.2"></script>
-  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-  <script>
-    window.TrackJS &&
-      TrackJS.install({
-        token: "ee6fab19c5a04ac1a32a645abde4613a",
-        application: "argon-dashboard-free"
-      });
-  </script>
+
+ <!-- General JS Scripts -->
+ <script src="./src/assets/modules/jquery.min.js"></script>
+ <script src="./src/assets/modules/popper.js"></script>
+ <script src="./src/assets/modules/tooltip.js"></script>
+ <script src="./src/assets/modules/bootstrap/js/bootstrap.min.js"></script>
+ <script src="./src/assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+ <script src="./src/assets/modules/moment.min.js"></script>
+ <script src="./src/assets/js/stisla.js"></script>
+ 
+ <!-- JS Libraies -->
+ <script src="./src/assets/modules/jquery.sparkline.min.js"></script>
+ <script src="./src/assets/modules/chart.min.js"></script>
+ <script src="./src/assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+ <script src="./src/assets/modules/summernote/summernote-bs4.js"></script>
+ <script src="./src/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+ <!-- Page Specific JS File -->
+ <script src="./src/assets/js/page/index.js"></script>
+ 
+ <!-- Template JS File -->
+ <script src="./src/assets/js/scripts.js"></script>
+ <script src="./src/assets/js/custom.js"></script>
+
+
+
 </body>
 
 </html>

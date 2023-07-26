@@ -3,686 +3,436 @@ import React from 'react'
 function Dashboard() {
     return (
         <div>
-            <div>
-                <nav className="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
-                    <div className="container-fluid">
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon" />
-                        </button>
-                        <a className="navbar-brand pt-0" href="#">
-                            <img src="../../../assets/img/brand/blue.png" className="navbar-brand-img" alt="..." />
-                        </a>
-                        <ul className="nav align-items-center d-md-none">
-                            <li className="nav-item dropdown">
-                                <a className="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i className="ni ni-bell-55" />
-                                </a>
-                                {/* <div className="dropdown-menu dropdown-menu-arrow dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another</a>
-                                    <div className="dropdown-divider" />
-                                    <a className="dropdown-item" href="#">Something</a>
-                                </div> */}
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <div className="media align-items-center">
-                                        <span className="avatar avatar-sm rounded-circle">
-                                            <img alt="Image placeholder" src="./assets/img/theme/team-1-800x800.jpg" />
-                                        </span>
+            <div id="app">
+                <div className="main-wrapper main-wrapper-1">
+                    <div className="navbar-bg" />
+                    <nav className="navbar navbar-expand-lg main-navbar">
+                        <form className="form-inline mr-auto">
+                            <ul className="navbar-nav mr-3">
+                                <li><a href="#" data-toggle="sidebar" className="nav-link nav-link-lg"><i className="fas fa-bars" /></a></li>
+                                <li><a href="#" data-toggle="search" className="nav-link nav-link-lg d-sm-none"><i className="fas fa-search" /></a></li>
+                            </ul>
+                            <div className="search-element">
+                                <input className="form-control" type="search" placeholder="Search" aria-label="Search" data-width={250} />
+                                <button className="btn" type="submit"><i className="fas fa-search" /></button>
+                                <div className="search-backdrop" />
+                                <div className="search-result">
+                                    <div className="search-header">
+                                        Histories
                                     </div>
-                                </a>
-                                <div className="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-                                    
-                                    <a href="./examples/profile.html" className="dropdown-item">
-                                        <i className="ni ni-single-02" />
-                                        <span>My profile</span>
+                                    <div className="search-item">
+                                        <a href="#">How to hack NASA using CSS</a>
+                                        <a href="#" className="search-close"><i className="fas fa-times" /></a>
+                                    </div>
+                                    <div className="search-item">
+                                        <a href="#">Kodinger.com</a>
+                                        <a href="#" className="search-close"><i className="fas fa-times" /></a>
+                                    </div>
+                                    <div className="search-item">
+                                        <a href="#">#Stisla</a>
+                                        <a href="#" className="search-close"><i className="fas fa-times" /></a>
+                                    </div>
+                                    <div className="search-header">
+                                        Result
+                                    </div>
+                                    <div className="search-item">
+                                        <a href="#">
+                                            <img className="mr-3 rounded" width={30} src="assets/img/products/product-3-50.png" alt="product" />
+                                            oPhone S9 Limited Edition
+                                        </a>
+                                    </div>
+                                    <div className="search-item">
+                                        <a href="#">
+                                            <img className="mr-3 rounded" width={30} src="assets/img/products/product-2-50.png" alt="product" />
+                                            Drone X2 New Gen-7
+                                        </a>
+                                    </div>
+                                    <div className="search-item">
+                                        <a href="#">
+                                            <img className="mr-3 rounded" width={30} src="assets/img/products/product-1-50.png" alt="product" />
+                                            Headphone Blitz
+                                        </a>
+                                    </div>
+                                    <div className="search-header">
+                                        Projects
+                                    </div>
+                                    <div className="search-item">
+                                        <a href="#">
+                                            <div className="search-icon bg-danger text-white mr-3">
+                                                <i className="fas fa-code" />
+                                            </div>
+                                            Stisla Admin Template
+                                        </a>
+                                    </div>
+                                    <div className="search-item">
+                                        <a href="#">
+                                            <div className="search-icon bg-primary text-white mr-3">
+                                                <i className="fas fa-laptop" />
+                                            </div>
+                                            Create a new Homepage Design
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <ul className="navbar-nav navbar-right">
+
+                            <li className="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" className="nav-link notification-toggle nav-link-lg beep"><i className="far fa-bell" /></a>
+                                <div className="dropdown-menu dropdown-list dropdown-menu-right">
+                                    <div className="dropdown-header">Notifications
+                                        <div className="float-right">
+                                            <a href="#">Mark All As Read</a>
+                                        </div>
+                                    </div>
+
+                                    <div className="dropdown-footer text-center">
+                                        <a href="#">View All <i className="fas fa-chevron-right" /></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="dropdown"><a href="#" data-toggle="dropdown" className="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <img alt="image" src="assets/img/avatar/avatar-1.png" className="rounded-circle mr-1" />
+                                <div className="d-sm-none d-lg-inline-block">Hi,</div></a>
+                                <div className="dropdown-menu dropdown-menu-right">
+                                    <a href="features-profile.html" className="dropdown-item has-icon">
+                                        <i className="far fa-user" /> Profile
                                     </a>
-                                  
-                                    
+
                                     <div className="dropdown-divider" />
-                                    <a href="#!" className="dropdown-item">
-                                        <i className="ni ni-user-run" />
-                                        <span>Logout</span>
+                                    <a href="#" className="dropdown-item has-icon text-danger">
+                                        <i className="fas fa-sign-out-alt" /> Logout
                                     </a>
                                 </div>
                             </li>
                         </ul>
-                        <div className="collapse navbar-collapse" id="sidenav-collapse-main">
-                            <div className="navbar-collapse-header d-md-none">
-                                <div className="row">
-                                    <div className="col-6 collapse-brand">
-                                        <a href="./index.html">
-                                            <img src="./assets/img/brand/blue.png" />
-                                        </a>
-                                    </div>
-                                    <div className="col-6 collapse-close">
-                                        <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
-                                            <span />
-                                            <span />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <form className="mt-4 mb-3 d-md-none">
-                                <div className="input-group input-group-rounded input-group-merge">
-                                    <input type="search" className="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search" />
-                                    <div className="input-group-prepend">
-                                        <div className="input-group-text">
-                                            <span className="fa fa-search" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <ul className="navbar-nav">
-                                <li className="nav-item  active ">
-                                    <a className="nav-link  active " href="#">
-                                        <i className="ni ni-tv-2 text-primary" /> Dashboard
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link " href="#">
-                                        <i className="ni ni-planet text-blue" />Orders
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link " href="#">
-                                        <i className="ni ni-pin-3 text-orange" />Billings
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link " href="#">
-                                        <i className="ni ni-single-02 text-yellow" />Users
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link " href="#">
-                                        <i className="ni ni-bullet-list-67 text-red" /> Reports
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <i className="ni ni-key-25 text-info" />Store
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">
-                                        <i className="ni ni-circle-08 text-pink" /> Kitchen
-                                    </a>
-                                </li>
-                            </ul>
-                            {/* <hr className="my-3" /> */}
-                           
-                            {/* <ul className="navbar-nav">
-                                <li className="nav-item active active-pro">
-                                    <a className="nav-link" href="#">
-                                        <i className="ni ni-send text-dark" /> Upgrade to PRO
-                                    </a>
-                                </li>
-                            </ul> */}
-                        </div>
-                    </div>
-                </nav>
-                <div className="main-content">
-                    <nav className="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
-                        <div className="container-fluid">
-                            <a className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="#">Dashboard</a>
-                            <form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
-                                <div className="form-group mb-0">
-                                    <div className="input-group input-group-alternative">
-                                        <div className="input-group-prepend">
-                                            <span className="input-group-text"><i className="fas fa-search" /></span>
-                                        </div>
-                                        <input className="form-control" placeholder="Search" type="text" />
-                                    </div>
-                                </div>
-                            </form>
-                            <ul className="navbar-nav align-items-center d-none d-md-flex">
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <div className="media align-items-center">
-                                            <span className="avatar avatar-sm rounded-circle">
-                                                <img alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg" />
-                                            </span>
-                                            <div className="media-body ml-2 d-none d-lg-block">
-                                                <span className="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div className="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-                                      
-                                        <a href="./examples/profile.html" className="dropdown-item">
-                                            <i className="ni ni-single-02" />
-                                            <span>My profile</span>
-                                        </a>
-                                     
-                                        <div className="dropdown-divider" />
-                                        <a href="#!" className="dropdown-item">
-                                            <i className="ni ni-user-run" />
-                                            <span>Logout</span>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </nav>
-                    <div className="header bg-gradient-primary pb-8 pt-5 pt-md-8">
-                        <div className="container-fluid">
-                            <div className="header-body">
-                                <div className="row">
-                                    <div className="col-xl-3 col-lg-6">
-                                        <div className="card card-stats mb-4 mb-xl-0">
-                                            <div className="card-body">
-                                                <div className="row">
-                                                    <div className="col">
-                                                        <h5 className="card-title text-uppercase text-muted mb-0">Orders</h5>
-                                                        <span className="h2 font-weight-bold mb-0">350,897</span>
-                                                    </div>
-                                                    <div className="col-auto">
-                                                        <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
-                                                            <i className="fas fa-chart-bar" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p className="mt-3 mb-0 text-muted text-sm">
-                                                    <span className="text-success mr-2"><i className="fa fa-arrow-up"/> 3.48</span>
-                                                    <span className="text-nowrap">Since last month</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-6">
-                                        <div className="card card-stats mb-4 mb-xl-0">
-                                            <div className="card-body">
-                                                <div className="row">
-                                                    <div className="col">
-                                                        <h5 className="card-title text-uppercase text-muted mb-0">Menu List</h5>
-                                                        <span className="h2 font-weight-bold mb-0">2,356</span>
-                                                    </div>
-                                                    <div className="col-auto">
-                                                        <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
-                                                            <i className="fas fa-chart-pie" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p className="mt-3 mb-0 text-muted text-sm">
-                                                    <span className="text-danger mr-2"><i className="fas fa-arrow-down" /> 3.48</span>
-                                                    <span className="text-nowrap">Since last week</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-6">
-                                        <div className="card card-stats mb-4 mb-xl-0">
-                                            <div className="card-body">
-                                                <div className="row">
-                                                    <div className="col">
-                                                        <h5 className="card-title text-uppercase text-muted mb-0">Sales</h5>
-                                                        <span className="h2 font-weight-bold mb-0">924</span>
-                                                    </div>
-                                                    <div className="col-auto">
-                                                        <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                                                            <i className="fas fa-users" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p className="mt-3 mb-0 text-muted text-sm">
-                                                    <span className="text-warning mr-2"><i className="fas fa-arrow-down" /> 1.10%</span>
-                                                    <span className="text-nowrap">Since yesterday</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-3 col-lg-6">
-                                        <div className="card card-stats mb-4 mb-xl-0">
-                                            <div className="card-body">
-                                                <div className="row">
-                                                    <div className="col">
-                                                        <h5 className="card-title text-uppercase text-muted mb-0">Menus</h5>
-                                                        <span className="h2 font-weight-bold mb-0">49</span>
-                                                    </div>
-                                                    <div className="col-auto">
-                                                        <div className="icon icon-shape bg-info text-white rounded-circle shadow">
-                                                            <i className="fas fa-percent" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p className="mt-3 mb-0 text-muted text-sm">
-                                                    <span className="text-success mr-2"><i className="fas fa-arrow-up" /> 12%</span>
-                                                    <span className="text-nowrap">Since last month</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div className="main-sidebar sidebar-style-2">
+                        <aside id="sidebar-wrapper">
+                            <div className="sidebar-brand">
+                                <a href="/dashboard">Cafeteria</a>
                             </div>
-                        </div>
-                    </div>
-                    <div className="container-fluid mt--7">
-                        <div className="row">
-                        <div className="col-xl-8 mb-5 mb-xl-0">
-                                <div className="card shadow">
-                                    <div className="card-header border-0">
-                                        <div className="row align-items-center">
-                                            <div className="col">
-                                                <h3 className="mb-0">Recent Items Register</h3>
-                                            </div>
-                                            <div className="col text-right">
-                                                <a href="#!" className="btn btn-sm btn-primary">See all</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="table-responsive">
-                                        <table className="table align-items-center table-flush">
-                                            <thead className="thead-light">
-                                                <tr>
-                                                    <th scope="col">Item Nanme</th>
-                                                    <th scope="col">Quantiyt</th>
-                                                    <th scope="col">Amounts</th>
-                                                    <th scope="col">Date</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/
-                                                    </th>
-                                                    <td>
-                                                        4,569
-                                                    </td>
-                                                    <td>
-                                                        340
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-up text-success mr-3" /> 46,53%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/index.html
-                                                    </th>
-                                                    <td>
-                                                        3,985
-                                                    </td>
-                                                    <td>
-                                                        319
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-down text-warning mr-3" /> 46,53%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/charts.html
-                                                    </th>
-                                                    <td>
-                                                        3,513
-                                                    </td>
-                                                    <td>
-                                                        294
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-down text-warning mr-3" /> 36,49%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/tables.html
-                                                    </th>
-                                                    <td>
-                                                        2,050
-                                                    </td>
-                                                    <td>
-                                                        147
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-up text-success mr-3" /> 50,87%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/profile.html
-                                                    </th>
-                                                    <td>
-                                                        1,795
-                                                    </td>
-                                                    <td>
-                                                        190
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-down text-danger mr-3" /> 46,53%
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                            <div className="sidebar-brand sidebar-brand-sm">
+                                <a href="#">C</a>
                             </div>
-                            <div className="col-xl-4">
-                                <div className="card shadow">
-                                    <div className="card-header bg-transparent">
-                                        <div className="row align-items-center">
-                                            <div className="col">
-                                                <h6 className="text-uppercase text-muted ls-1 mb-1">Performance</h6>
-                                                <h2 className="mb-0">Total orders</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card-body">
-                                    <div className="table-responsive">
-                                        <table className="table align-items-center table-flush">
-                                            <thead className="thead-light">
-                                                <tr>
-                                                    <th scope="col">Order menu</th>
-                                                    <th scope="col">Quantity</th>
-                                                    <th scope='col'>Amount</th>
-                                                    <th scope="col">Date</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">
-                                                        Friday Bilian
-                                                    </th>
-                                                    <td>
-                                                        10
-                                                    </td>
-                                                    <td>2000</td>
-                                                    <td>
-                                                       2023-04-20
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        Friday Bilian
-                                                    </th>
-                                                    <td>
-                                                        10
-                                                    </td>
-                                                    <td>2000</td>
-                                                    <td>
-                                                       2023-04-20
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        Friday Bilian
-                                                    </th>
-                                                    <td>
-                                                        10
-                                                    </td>
-                                                    <td>2000</td>
-                                                    <td>
-                                                       2023-04-20
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        Friday Bilian
-                                                    </th>
-                                                    <td>
-                                                        10
-                                                    </td>
-                                                    <td>2000</td>
-                                                    <td>
-                                                       2023-04-20
-                                                    </td>
-                                                </tr>
-                                               
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row mt-5">
-                            <div className="col-xl-8 mb-5 mb-xl-0">
-                                <div className="card shadow">
-                                    <div className="card-header border-0">
-                                        <div className="row align-items-center">
-                                            <div className="col">
-                                                <h3 className="mb-0">Page visits</h3>
-                                            </div>
-                                            <div className="col text-right">
-                                                <a href="#!" className="btn btn-sm btn-primary">See all</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="table-responsive">
-                                        <table className="table align-items-center table-flush">
-                                            <thead className="thead-light">
-                                                <tr>
-                                                    <th scope="col">Page name</th>
-                                                    <th scope="col">Visitors</th>
-                                                    <th scope="col">Unique users</th>
-                                                    <th scope="col">Bounce rate</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/
-                                                    </th>
-                                                    <td>
-                                                        4,569
-                                                    </td>
-                                                    <td>
-                                                        340
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-up text-success mr-3" /> 46,53%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/index.html
-                                                    </th>
-                                                    <td>
-                                                        3,985
-                                                    </td>
-                                                    <td>
-                                                        319
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-down text-warning mr-3" /> 46,53%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/charts.html
-                                                    </th>
-                                                    <td>
-                                                        3,513
-                                                    </td>
-                                                    <td>
-                                                        294
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-down text-warning mr-3" /> 36,49%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/tables.html
-                                                    </th>
-                                                    <td>
-                                                        2,050
-                                                    </td>
-                                                    <td>
-                                                        147
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-up text-success mr-3" /> 50,87%
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        /argon/profile.html
-                                                    </th>
-                                                    <td>
-                                                        1,795
-                                                    </td>
-                                                    <td>
-                                                        190
-                                                    </td>
-                                                    <td>
-                                                        <i className="fas fa-arrow-down text-danger mr-3" /> 46,53%
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-4">
-                                <div className="card shadow">
-                                    <div className="card-header border-0">
-                                        <div className="row align-items-center">
-                                            <div className="col">
-                                                <h3 className="mb-0">Social traffic</h3>
-                                            </div>
-                                            <div className="col text-right">
-                                                <a href="#!" className="btn btn-sm btn-primary">See all</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="table-responsive">
-                                        <table className="table align-items-center table-flush">
-                                            <thead className="thead-light">
-                                                <tr>
-                                                    <th scope="col">Referral</th>
-                                                    <th scope="col">Visitors</th>
-                                                    <th scope="col" />
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">
-                                                        Facebook
-                                                    </th>
-                                                    <td>
-                                                        1,480
-                                                    </td>
-                                                    <td>
-                                                        <div className="d-flex align-items-center">
-                                                            <span className="mr-2">60%</span>
-                                                            <div>
-                                                                <div className="progress">
-                                                                    <div className="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow={60} aria-valuemin={0} aria-valuemax={100} style={{ width: '60%' }} />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        Facebook
-                                                    </th>
-                                                    <td>
-                                                        5,480
-                                                    </td>
-                                                    <td>
-                                                        <div className="d-flex align-items-center">
-                                                            <span className="mr-2">70%</span>
-                                                            <div>
-                                                                <div className="progress">
-                                                                    <div className="progress-bar bg-gradient-success" role="progressbar" aria-valuenow={70} aria-valuemin={0} aria-valuemax={100} style={{ width: '70%' }} />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        Google
-                                                    </th>
-                                                    <td>
-                                                        4,807
-                                                    </td>
-                                                    <td>
-                                                        <div className="d-flex align-items-center">
-                                                            <span className="mr-2">80%</span>
-                                                            <div>
-                                                                <div className="progress">
-                                                                    <div className="progress-bar bg-gradient-primary" role="progressbar" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100} style={{ width: '80%' }} />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        Instagram
-                                                    </th>
-                                                    <td>
-                                                        3,678
-                                                    </td>
-                                                    <td>
-                                                        <div className="d-flex align-items-center">
-                                                            <span className="mr-2">75%</span>
-                                                            <div>
-                                                                <div className="progress">
-                                                                    <div className="progress-bar bg-gradient-info" role="progressbar" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100} style={{ width: '75%' }} />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">
-                                                        twitter
-                                                    </th>
-                                                    <td>
-                                                        2,645
-                                                    </td>
-                                                    <td>
-                                                        <div className="d-flex align-items-center">
-                                                            <span className="mr-2">30%</span>
-                                                            <div>
-                                                                <div className="progress">
-                                                                    <div className="progress-bar bg-gradient-warning" role="progressbar" aria-valuenow={30} aria-valuemin={0} aria-valuemax={100} style={{ width: '30%' }} />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <footer className="footer">
-                            <div className="row align-items-center justify-content-xl-between">
-                                <div className="col-xl-6">
-                                    <div className="copyright text-center text-xl-left text-muted">
-                                        © 2018 <a href="https://www.creative-tim.com" className="font-weight-bold ml-1" target="_blank">Creative Tim</a>
-                                    </div>
-                                </div>
-                                <div className="col-xl-6">
-                                    <ul className="nav nav-footer justify-content-center justify-content-xl-end">
-                                        <li className="nav-item">
-                                            <a href="https://www.creative-tim.com" className="nav-link" target="_blank">Creative Tim</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="https://www.creative-tim.com/presentation" className="nav-link" target="_blank">About Us</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="http://blog.creative-tim.com" className="nav-link" target="_blank">Blog</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" className="nav-link" target="_blank">MIT License</a>
-                                        </li>
+                            <ul className="sidebar-menu">
+                                <li className="menu-header">Dashboard</li>
+                                <li className="dropdown active">
+                                    <a href="#" className="nav-link"><i className="fas fa-fire" /><span>General Dashboard</span></a>
+
+                                </li>
+                                <li className="menu-header">Starter</li>
+                                <li className="dropdown">
+                                    <a href="#" className="nav-link has-dropdown" data-toggle="dropdown"><i className="fas fa-columns" /> <span>Orders</span></a>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="nav-link" href="#">Recent Orders</a></li>
+                                        <li><a className="nav-link" href="#">Creat Orders</a></li>
                                     </ul>
+                                </li>
+                                <li><a className="nav-link" href="blank.html"><i className="far fa-square" /> <span>Blank Page</span></a></li>
+                                <li className="dropdown">
+                                    <a href="#" className="nav-link has-dropdown"><i className="fas fa-th" /> <span>Menu</span></a>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="nav-link" href="bootstrap-alert.html">Alert</a></li>
+                                        <li><a className="nav-link" href="bootstrap-badge.html">Badge</a></li>
+
+                                    </ul>
+                                </li>
+
+                                <li className="dropdown">
+                                    <a href="#" className="nav-link has-dropdown"><i className="fas fa-th-large" /> <span>Store</span></a>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="nav-link" href="components-article.html">Article</a></li>                <li><a className="nav-link beep beep-sidebar" href="components-avatar.html">Avatar</a></li>                <li><a className="nav-link" href="components-chat-box.html">Chat Box</a></li>                <li><a className="nav-link beep beep-sidebar" href="components-empty-state.html">Empty State</a></li>                <li><a className="nav-link" href="components-gallery.html">Gallery</a></li>
+                                        <li><a className="nav-link beep beep-sidebar" href="components-hero.html">Hero</a></li>                <li><a className="nav-link" href="components-multiple-upload.html">Multiple Upload</a></li>
+                                        <li><a className="nav-link beep beep-sidebar" href="components-pricing.html">Pricing</a></li>                <li><a className="nav-link" href="components-statistic.html">Statistic</a></li>                <li><a className="nav-link" href="components-tab.html">Tab</a></li>
+                                        <li><a className="nav-link" href="components-table.html">Table</a></li>
+                                        <li><a className="nav-link" href="components-user.html">User</a></li>                <li><a className="nav-link beep beep-sidebar" href="components-wizard.html">Wizard</a></li>            </ul>
+                                </li>
+                                <li className="dropdown">
+                                    <a href="#" className="nav-link has-dropdown"><i className="far fa-file-alt" /> <span>Report</span></a>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
+                                        <li><a className="nav-link" href="forms-editor.html">Editor</a></li>
+                                        <li><a className="nav-link" href="forms-validation.html">Validation</a></li>
+                                    </ul>
+                                </li>
+                                <li className="dropdown">
+                                    <a href="#" className="nav-link has-dropdown"><i className="fas fa-map-marker-alt" /> <span>Users</span></a>
+
+                                </li>
+
+
+
+
+                            </ul>
+
+
+                        </aside>
+                    </div>
+                    {/* Main Content */}
+                    <div className="main-content">
+                        <section className="section">
+                            <div className="row">
+                                <div className="col-lg-4 col-md-4 col-sm-12">
+                                    <div className="card card-statistic-2">
+                                        <div className="card-stats">
+                                            <div className="card-stats-title text-center">General  View
+                                                <div className="dropdown d-inline">
+                                                    <a className="font-weight-600 " href="#" id="orders-month"></a>
+                                                   
+                                                </div>
+                                            </div>
+
+
+                                            <div className="card-stats-items">
+                                                <div className="card-stats-item">
+                                                    <div className="card-stats-item-count">24</div>
+                                                    <div className="card-stats-item-label">Orders</div>
+                                                </div>
+                                                <div className="card-stats-item">
+                                                    <div className="card-stats-item-count">12</div>
+                                                    <div className="card-stats-item-label">Menu avaliable</div>
+                                                </div>
+                                                <div className="card-stats-item">
+                                                    <div className="card-stats-item-count">23</div>
+                                                    <div className="card-stats-item-label">Tables</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="card-icon shadow-primary bg-primary">
+                                            <i className="fas fa-archive" />
+                                        </div>
+                                        <div className="card-wrap">
+                                            <div className="card-header">
+                                                <h4>Total Orders</h4>
+                                            </div>
+                                            <div className="card-body">
+                                                59
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-md-4 col-sm-12">
+                                    <div className="card card-statistic-2">
+                                        <div className="card-chart">
+                                            <canvas id="balance-chart" height={80} />
+                                        </div>
+                                        <div className="card-icon shadow-primary bg-primary">
+                                            <i className="fas fa-dollar-sign" />
+                                        </div>
+                                        <div className="card-wrap">
+                                            <div className="card-header">
+                                                <h4>Sales  </h4>
+                                            </div>
+                                            <div className="card-body">
+                                                TSH 187,130/=
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-md-4 col-sm-12">
+                                    <div className="card card-statistic-2">
+                                        <div className="card-chart">
+                                            <canvas id="sales-chart" height={80} />
+                                        </div>
+                                        <div className="card-icon shadow-primary bg-primary">
+                                            <i className="fas fa-shopping-bag" />
+                                        </div>
+                                        <div className="card-wrap">
+                                            <div className="card-header">
+                                                <h4>Stores Items</h4>
+                                            </div>
+                                            <div className="card-body">
+                                                47
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </footer>
+                            <div className="row">
+                                <div className="col-lg-8">
+                                    <div className="card">
+                                        <div className="card-header">
+                                            <h4>Budget vs Sales</h4>
+                                        </div>
+                                        <div className="card-body">
+                                            <canvas id="myChart" height={158} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4">
+                                    <div className="card gradient-bottom">
+                                        <div className="card-header">
+                                            <h4 className='text-center'>Latest Items in Store</h4>
+                                            
+                                        </div>
+                                        <div className="card-body" id="top-5-scroll">
+                                            <ul className="list-unstyled list-unstyled-border">
+                                                <li className="media">
+                                                <div className="media-title">Water Kili</div>
+                                                    <div className="media-body">
+                                                        <div className="float-right"><div className="font-weight-600 text-muted text-small">86 </div></div>
+                                                        <div className="media-title"> 23-08-2002</div>
+                                                       
+                                                    </div>
+                                                </li>
+                                                <li className="media">
+                                                    <img className="mr-3 rounded" width={55} src="assets/img/products/product-4-50.png" alt="product" />
+                                                    <div className="media-body">
+                                                        <div className="float-right"><div className="font-weight-600 text-muted text-small">67 Sales</div></div>
+                                                        <div className="media-title">iBook Pro 2018</div>
+                                                        <div className="mt-1">
+                                                            <div className="budget-price">
+                                                                <div className="budget-price-square bg-primary" data-width="84%" />
+                                                                <div className="budget-price-label">$107,133</div>
+                                                            </div>
+                                                            <div className="budget-price">
+                                                                <div className="budget-price-square bg-danger" data-width="60%" />
+                                                                <div className="budget-price-label">$91,455</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                               
+                                               
+                                                
+                                            </ul>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="row">
+                                <div className="col-md-8">
+                                    <div className="card">
+                                        <div className="card-header">
+                                            <h4>Invoices</h4>
+                                            <div className="card-header-action">
+                                                <a href="#" className="btn btn-danger">View More <i className="fas fa-chevron-right" /></a>
+                                            </div>
+                                        </div>
+                                        <div className="card-body p-0">
+                                            <div className="table-responsive table-invoice">
+                                                <table className="table table-striped">
+                                                    <tbody><tr>
+                                                        <th>Invoice ID</th>
+                                                        <th>Customer</th>
+                                                        <th>Status</th>
+                                                        <th>Due Date</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                        <tr>
+                                                            <td><a href="#">INV-87239</a></td>
+                                                            <td className="font-weight-600">Kusnadi</td>
+                                                            <td><div className="badge badge-warning">Unpaid</div></td>
+                                                            <td>July 19, 2018</td>
+                                                            <td>
+                                                                <a href="#" className="btn btn-primary">Detail</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="#">INV-48574</a></td>
+                                                            <td className="font-weight-600">Hasan Basri</td>
+                                                            <td><div className="badge badge-success">Paid</div></td>
+                                                            <td>July 21, 2018</td>
+                                                            <td>
+                                                                <a href="#" className="btn btn-primary">Detail</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="#">INV-76824</a></td>
+                                                            <td className="font-weight-600">Muhamad Nuruzzaki</td>
+                                                            <td><div className="badge badge-warning">Unpaid</div></td>
+                                                            <td>July 22, 2018</td>
+                                                            <td>
+                                                                <a href="#" className="btn btn-primary">Detail</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="#">INV-84990</a></td>
+                                                            <td className="font-weight-600">Agung Ardiansyah</td>
+                                                            <td><div className="badge badge-warning">Unpaid</div></td>
+                                                            <td>July 22, 2018</td>
+                                                            <td>
+                                                                <a href="#" className="btn btn-primary">Detail</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="#">INV-87320</a></td>
+                                                            <td className="font-weight-600">Ardian Rahardiansyah</td>
+                                                            <td><div className="badge badge-success">Paid</div></td>
+                                                            <td>July 28, 2018</td>
+                                                            <td>
+                                                                <a href="#" className="btn btn-primary">Detail</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="card card-hero">
+                                        <div className="card-header">
+                                            <div className="card-icon">
+                                                <i className="far fa-question-circle" />
+                                            </div>
+                                            <h4>14</h4>
+                                            <div className="card-description">Customers need help</div>
+                                        </div>
+                                        <div className="card-body p-0">
+                                            <div className="tickets-list">
+                                                <a href="#" className="ticket-item">
+                                                    <div className="ticket-title">
+                                                        <h4>My order hasn't arrived yet</h4>
+                                                    </div>
+                                                    <div className="ticket-info">
+                                                        <div>Laila Tazkiah</div>
+                                                        <div className="bullet" />
+                                                        <div className="text-primary">1 min ago</div>
+                                                    </div>
+                                                </a>
+                                                <a href="#" className="ticket-item">
+                                                    <div className="ticket-title">
+                                                        <h4>Please cancel my order</h4>
+                                                    </div>
+                                                    <div className="ticket-info">
+                                                        <div>Rizal Fakhri</div>
+                                                        <div className="bullet" />
+                                                        <div>2 hours ago</div>
+                                                    </div>
+                                                </a>
+                                                <a href="#" className="ticket-item">
+                                                    <div className="ticket-title">
+                                                        <h4>Do you see my mother?</h4>
+                                                    </div>
+                                                    <div className="ticket-info">
+                                                        <div>Syahdan Ubaidillah</div>
+                                                        <div className="bullet" />
+                                                        <div>6 hours ago</div>
+                                                    </div>
+                                                </a>
+                                                <a href="features-tickets.html" className="ticket-item ticket-more">
+                                                    View All <i className="fas fa-chevron-right" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
+                    <footer className="main-footer">
+                        <div className="footer-left">
+                            Copyright © 2023 <div className="bullet" />  <a href="https://nauval.in/">Cafeteria</a>
+                        </div>
+                        <div className="footer-right">
+                        </div>
+                    </footer>
                 </div>
             </div>
-
         </div>
+
     )
 }
 
